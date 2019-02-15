@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
+import { collapseExpand } from './../../helpers/sidebar'
 
 class Sidebar extends Component {
     render() {
         return(
             <SideNav
-                onSelect={(selected) => {
-                    // Add your code here
+                onToggle={(expanded) => {
+                    collapseExpand(expanded)
                 }}
             >
                 <SideNav.Toggle />
