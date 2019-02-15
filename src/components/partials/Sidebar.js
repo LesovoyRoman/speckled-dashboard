@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import { collapseExpand } from './../../helpers/sidebar'
+import bg from './../../images/speckled-bg-4.jpg'
+
+const bgStyle = 'url(' + bg + ') repeat-y'
 
 class Sidebar extends Component {
     render() {
@@ -10,6 +13,7 @@ class Sidebar extends Component {
                 onToggle={(expanded) => {
                     collapseExpand(expanded)
                 }}
+                style={{ background: bgStyle }}
             >
                 <SideNav.Toggle />
                 <SideNav.Nav defaultSelected="home">
