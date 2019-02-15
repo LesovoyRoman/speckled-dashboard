@@ -1,4 +1,18 @@
+/**
+  Default behavior of partials
+ */
 #speckled-dashboard-root {
   min-height: 100vh;
   margin-left: 64px;
+  position: relative;
+
+  .sidenav---sidenav---_2tBP {
+    position: fixed;
+  }
+
+  .navbar {
+    position: absolute;
+    width: 100%;
+  }
 }
+
